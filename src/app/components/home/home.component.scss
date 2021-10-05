@@ -1,0 +1,213 @@
+@import '../../../styles.css';
+
+
+.background {
+  background-image: url(../../../assets/backGrounds/sliderSectionBG.png);
+  flex-direction: column;
+  align-items: center;
+  box-shadow: inset 0px 2px 2px -1px rgba(115, 115, 115, 0.65);
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__name {
+    font-size: 72px;
+    font-family: SeasideResortNF;
+    margin-top: 55px;
+    color: rgb(249, 235, 217);
+
+    @media (max-width:1100px) {
+      font-size: 68px;
+    }
+
+    @media (max-width:845px) {
+      text-align: center;
+    }
+
+    @media (max-width:650px) {
+      margin-top: 30px;
+    }
+
+    @media (max-width:480px) {
+      font-size: 56px;
+    }
+
+    @media (max-width:370px) {
+      font-size: 46px;
+    }
+  }
+
+  &__prof {
+    margin-top: 10px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 800px;
+    background-image: url(../../../assets/backGrounds/ribbon.png);
+    background-size: cover;
+    font-family: Bazar;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #4b4e4c;
+
+    @media (max-width:1100px) {
+      width: 720px;
+      height: 70px;
+    }
+
+    @media (max-width:760px) {
+      background-image: url(../../../assets/backGrounds/ribbon-small.png);
+      width: 468px;
+    }
+
+    @media (max-width:480px) {
+      width: 90vw;
+      height: 52px;
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+
+    @media (max-width:370px) {
+      height: 15px;
+      font-size: 20px;
+      background-image: none;
+    }
+  }
+
+  &__main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+
+    @media (max-width:1050px) {
+      flex-direction: column;
+    }
+  }
+
+  &__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+
+    &:last-child {
+      margin-left: 40px;
+    }
+
+    @media (max-width:1050px) {
+      width: 70%;
+      margin-left: 0px !important;
+    }
+
+    @media (max-width:725px) {
+      width: 80%;
+    }
+  }
+
+  &__photo {
+    width: 480px;
+    height: 520px;
+    background-color: #fbfaf6;
+    border-radius: 10px;
+    transform: rotate(-10deg);
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.3);
+
+    @media (max-width:1050px) {
+      margin-bottom: 80px;
+    }
+
+    @media (max-width:580px) {
+      transform: none;
+    }
+
+    @media (max-width:510px) {
+      width: 88vw;
+      height: 440px;
+    }
+
+    @media (max-width:370px) {
+      height: 440px;
+    }
+
+    @media (max-width:370px) {
+      width: 82vw;
+      height: 300px;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__photo-in {
+    margin: 15px 15px 0 15px;
+    height: 83%;
+    width: 94%;
+    background-color: #e3dfd7;
+    background: url(../../../assets/images/IMG_4079.PNG) no-repeat;
+    background-size: cover;
+
+    @media (max-width:510px) {
+      width: 93%;
+    }
+
+    @media (max-width:370px) {
+      width: 89%;
+    }
+  }
+
+  &__link {
+    margin-bottom: 25px;
+    text-align: center;
+    color: #4b4e4c;
+    font-size: 20px;
+    font-family: Caveat;
+
+    @media (max-width:370px) {
+      margin-top: 10px;
+    }
+
+  }
+
+  &__text {
+    width: 100%;
+    align-items: center;
+    font-family: Bazar;
+    font-size: 44px;
+    letter-spacing: 1px;
+    line-height: 56px;
+    color: rgb(249, 235, 217);
+    text-shadow: -1px -1px 1px rgba(255, 255, 255, .1), 1px 1px 1px rgba(0, 0, 0, .5);
+    margin-bottom: 30px;
+    text-align: left;
+
+    &:last-child {
+      margin-bottom: 58px;
+    }
+
+    &_main {
+      font-size: 30px;
+      font-family: RobotoSlab;
+      line-height: 48px;
+
+      @media (max-width:650px) {
+        font-size: 26px;
+      }
+
+      @media (max-width:370px) {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__tech {
+    color: #c24f30;
+  }
+}

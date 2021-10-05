@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Bazar;
+  src: url(./assets/fonts/bazar/Bazar.ttf);
+}
+
+@font-face {
+  font-family: SeasideResortNF;
+  src: url(./assets/fonts/seasideresortnf/SeasideResortNF.ttf);
+}
+
+@font-face {
+  font-family: Caveat;
+  src: url(./assets/fonts/Caveat/Caveat-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oswald;
+  src: url(./assets/fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: RobotoSlab;
+  src: url(./assets/fonts/Roboto_Slab/static/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoSlabBold;
+  src: url(./assets/fonts/Roboto_Slab/static/RobotoSlab-Bold.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+.section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+}
+
+.line-bottom {
+  border-bottom: 2px dashed #828282ad;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+.line-top {
+  border-bottom: 2px dashed #828282ad;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.solid-line {
+  width: 100%;
+}
+
+.title {
+  font-size: 86px;
+  font-family: Bazar;
+  margin-top: 50px;
+  color: rgb(57, 58, 58);
+  text-transform: uppercase;
+  text-shadow: 2px 1px 0px #fff, 4px 2px 0px rgba(0, 0, 0, 0.66);
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+
+
+.separator {
+  width: 140px;
+  margin-bottom: 5px;
+}
+
+.text {
+  font-family: Oswald;
+  font-size: 22px;
+  color: rgb(57, 58, 58);
+  margin-bottom: 35px;
+}
+
+@media (max-width:370px) {
+  .text {
+    font-size: 21px;
+  }
+}
+
+
+@media (max-width:370px) {
+  .text {
+    font-size: 19px;
+  }
+}
+
+@media (max-width:650px) {
+  .title__size {
+    font-size: 80px;
+  }
+}
+
+@media (max-width:370px) {
+  .title__size {
+    font-size: 70px;
+  }
+}

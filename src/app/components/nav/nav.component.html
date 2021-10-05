@@ -1,0 +1,42 @@
+<div class="section background full">
+    <div class="container nav">
+        <a href="#home" class="nav__item">Home</a>
+        <a href="#about" class="nav__item">About me</a>
+        <div class="nav__item nav__bage">
+            AO
+        </div>
+        <a href="#portfolio" class="nav__item">Portfolio</a>
+        <a href="#contact" class="nav__item">Contact me</a>
+    </div>
+
+    <div class="line-bottom"></div>
+</div>
+
+<div *ngIf="!menuOpen" class="m-menu mobile">
+    <img class="up__arrow" src="../assets/images/menu_white_24dp.svg" (click)="menuSwith()" alt="menu">
+</div>
+<div class="relative">
+    <div *ngIf="menuOpen" class="menu mobile">
+        <div class="menu__close" (click)="menuSwith()">×</div>
+        <div class="menu__item menu__item_home">
+            <div class="line-top"></div>
+            <a href="#home" class="menu__title">Home</a>
+            <div class="line-bottom"></div>
+        </div>
+        <div class="menu__item menu__item_about">
+            <div class="line-top"></div>
+            <a href="#about" class="menu__title">About me</a>
+            <div class="line-bottom"></div>
+        </div>
+        <div class="menu__item menu__item_portfolio">
+            <div class="line-top"></div>
+            <a href="#portfolio" class="menu__title">Portfolio</a>
+            <div class="line-bottom"></div>
+        </div>
+        <div class="menu__item menu__item_contact">
+            <div class="line-top"></div>
+            <a href="#contact" class="menu__title menu__title_light">Contact me</a>
+            <div class="line-bottom"></div>
+        </div>
+    </div>
+</div>

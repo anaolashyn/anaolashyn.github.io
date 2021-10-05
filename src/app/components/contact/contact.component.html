@@ -1,0 +1,41 @@
+<div class="section background" id="contact">
+  <div class="line-top"></div>
+  <div class="container contact">
+    <div class="title contact__title title__size">Contact me</div>
+    <img class="separator" src="../../../assets/images/separator-bez.png" alt="separator">
+    <div class="text contact__text">I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</div>
+    <form class="contact__form" [formGroup]="contactForm">
+      <input required type="text" class="contact__input"
+        [ngClass]="{'error':contactForm.get('name').touched && contactForm.get('name').invalid}" placeholder="Name*"
+        formControlName="name">
+      <input required type="text" class="contact__input"
+        [ngClass]="{'error':contactForm.get('email').touched && contactForm.get('email').invalid}"
+        placeholder="Email address*" formControlName="email">
+      <input required type="text" class="contact__input"
+        [ngClass]="{'error':contactForm.get('subject').touched && contactForm.get('subject').invalid}"
+        placeholder="Subject*" formControlName="subject">
+      <textarea required class="contact__area" cols="30"
+        [ngClass]="{'error':contactForm.get('message').touched && contactForm.get('message').invalid}" rows="10"
+        placeholder="Your message*" formControlName="message"></textarea>
+      <button [disabled]="contactForm.invalid" class="contact__btn" (click)="sendForm()">Send Message</button>
+    </form>
+    <div class="contact__i-am-social">I am social</div>
+    <img src="../../../assets/images/small-line-bez.png" alt="line" class="contact__small-line">
+    <div class="contact__social">
+      <a class="contact__social-item" href="https://www.facebook.com/AnaOlashyn">
+        <img src="../../../assets/images/facebook.svg" alt="facebook" class="contact__social-img contact__facebook">
+      </a>
+      <a class="contact__social-item" href="https://www.linkedin.com/in/anastasiia-zaichenko/">
+        <img src="../../../assets/images/linkedin.svg" alt="link" class="contact__social-img contact__linkedin">
+      </a>
+      <a class="contact__social-item" href="https://github.com/AnaOlashyn">
+        <img src="../../../assets/images/github.svg" alt="github" class="contact__social-img contact__github">
+      </a>
+      <a class="contact__social-item" href="https://www.instagram.com/ana_olashyn/">
+        <img src="../../../assets/images/instagram.svg" alt="instagram" class="contact__social-img contact__instagram">
+      </a>
+    </div>
+    <div class="contact__copyright">2021 © Anastasiia Olashyn</div>
+  </div>
+  <div class="line-bottom"></div>
+</div>
